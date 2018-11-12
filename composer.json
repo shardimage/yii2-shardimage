@@ -1,0 +1,46 @@
+{
+    "name": "shardimage/yii2-shardimage",
+    "type": "yii2-extension",
+    "description": "yii2-shardimage package",
+    "keywords": [
+        "shardimage",
+        "yii2-shardimage"
+    ],
+    "authors": [
+        {
+            "name": "Shardimage",
+            "email": "info@shardimage.com",
+            "homepage": "https://shardimage.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "~7.1",
+        "shardimage/shardimage-php": "^1.0",
+        "yiisoft/yii2": "^2.0.13",
+        "psr/log": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "shardimage\\yii2shardimage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "shardimage\\yii2shardimage\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
