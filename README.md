@@ -22,8 +22,10 @@ Once the extension is installed, simply use it in your code by:
     'shardimage' => [
         // Component class
         'class' => \shardimage\yii2shardimage\Component::class,
-        // API host, default: https://api.shardimage.com
-        'apiHost' => 'https://api.shardimage.com',
+    // Useful defaults:
+        // Default cloud ID
+        'cloudId' => 'R0Cu47n0',
+    // Authentication:
         // API key (generated on shardimage.com)
         'apiKey' => '6174447875126537682',
         // API secret (generated on shardimage.com)
@@ -36,26 +38,30 @@ Once the extension is installed, simply use it in your code by:
         'apiAccessTokenSecret' => 'g37rei4353frj5746',
         // API key, secret and cloud ID in URL format
         'apiConfig' => 'apiKey:apiSecret@cloudId',
+    // Hosts & proxy:
         // Host for serving images, default: https://img.shardimage.com
         'imageHost' => 'https://img.shardimage.com',
-        // Default cloud ID
-        'cloudId' => 'R0Cu47n0',
+        // API host, default: https://api.shardimage.com
+        'apiHost' => 'https://api.shardimage.com',
+        // Proxy in HTTP communication
+        'proxy' => 'http://127.0.0.1:8080',
+    // Caching:
+        // Cache instance for the Etag handler
+        'cache' => new \yii\caching\FileCache(),
+        // Cache expiration in seconds, in accordance with the used caching mechanism
+        'cacheExpiration' => 3600,
+    // Logging:
         // Print debug log to console, default: false
         'debug' => true,
         // Logger instance, classname, or an application component ID.
         'logger' => Logger::class,
+    // Special:
         // Use gzip in HTTP communication, default: true
         'useGzip' => true,
         // Use PHP MsgPack in HTTP communication, default: true
         'useMsgPack' => true,
         // Dismiss non-fatal exceptions, default: true
         'softExceptionEnabled' => true,
-        // Proxy in HTTP communication
-        'proxy' => 'http://127.0.0.1:8080',
-        // Cache instance for the Etag handler
-        'cache' => new \yii\caching\FileCache(),
-        // Cache expiration in seconds, in accordance with the used caching mechanism
-        'cacheExpiration' => 3600,
     ],
     // ...
 ],
