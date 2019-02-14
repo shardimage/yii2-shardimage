@@ -116,6 +116,11 @@ class Component extends \yii\base\Component
     public $cacheExpiration;
 
     /**
+     * @var int Request timeout [sec]
+     */
+    public $timeout = 180;
+
+    /**
      * @var \shardimage\shardimagephp\auth\Client
      */
     private $client;
@@ -149,6 +154,7 @@ class Component extends \yii\base\Component
             'proxy' => $this->proxy,
             'cache' => $this->cache,
             'cacheExpiration' => $this->cacheExpiration,
+            'timeout' => $this->timeout,
         ]);
     }
 
