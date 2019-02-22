@@ -121,6 +121,11 @@ class Component extends \yii\base\Component
     public $timeout = 180;
 
     /**
+     * @var int Maximal task count per batch request
+     */
+    public $batchLimit = 100;
+
+    /**
      * @var \shardimage\shardimagephp\auth\Client
      */
     private $client;
@@ -155,6 +160,7 @@ class Component extends \yii\base\Component
             'cache' => $this->cache,
             'cacheExpiration' => $this->cacheExpiration,
             'timeout' => $this->timeout,
+            'batchLimit' => $this->batchLimit,
         ]);
     }
 
