@@ -21,6 +21,7 @@ use shardimage\shardimagephp\services\JobService;
 use shardimage\shardimagephp\services\SystemService;
 use shardimage\shardimagephp\services\UploadService;
 use shardimage\shardimagephp\services\UrlService;
+use shardimage\shardimagephpapi\services\dump\DumpServiceInterface;
 use yii\di\Instance;
 use Psr\Log\LoggerInterface;
 
@@ -126,6 +127,11 @@ class Component extends \yii\base\Component
     public $batchLimit = 100;
 
     /**
+     * @var DumpServiceInterface dumping service object
+     */
+    public $dumpService;
+
+    /**
      * @var \shardimage\shardimagephp\auth\Client
      */
     private $client;
@@ -161,6 +167,7 @@ class Component extends \yii\base\Component
             'cacheExpiration' => $this->cacheExpiration,
             'timeout' => $this->timeout,
             'batchLimit' => $this->batchLimit,
+            'dumpService' => $this->dumpService,
         ]);
     }
 
