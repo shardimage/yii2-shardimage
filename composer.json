@@ -2,6 +2,7 @@
     "name": "shardimage/yii2-shardimage",
     "type": "yii2-extension",
     "description": "yii2-shardimage package",
+    "license": "Apache-2.0",
     "keywords": [
         "shardimage",
         "yii2-shardimage"
