@@ -21,6 +21,7 @@ use shardimage\shardimagephp\services\JobService;
 use shardimage\shardimagephp\services\SystemService;
 use shardimage\shardimagephp\services\UploadService;
 use shardimage\shardimagephp\services\UrlService;
+use shardimage\shardimagephp\services\SuperBackupLogService;
 use shardimage\shardimagephpapi\services\dump\DumpServiceInterface;
 use yii\di\Instance;
 use Psr\Log\LoggerInterface;
@@ -279,6 +280,16 @@ class Component extends \yii\base\Component
     public function url()
     {
         return $this->client->getUrlService();
+    }
+
+    /**
+     * SuperBackup log service
+     *
+     * @return SuperBackupLogService
+     */
+    public function superBackupLog()
+    {
+        return $this->client->getSuperBackupLogService();
     }
 
     /**
