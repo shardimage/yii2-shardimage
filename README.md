@@ -1,4 +1,9 @@
 # Yii2-Shardimage
+[![Packagist](https://img.shields.io/packagist/dt/shardimage/yii2-shardimage)](https://packagist.org/packages/shardimage/yii2-shardimage)
+[![Packagist](https://img.shields.io/packagist/l/shardimage/yii2-shardimage)](https://packagist.org/packages/shardimage/yii2-shardimage)
+[![GitHub issues](https://img.shields.io/github/issues/shardimage/yii2-shardimage)](https://github.com/shardimage/yii2-shardimage/issues)
+[![Packagist Version](https://img.shields.io/packagist/v/shardimage/yii2-shardimage)](https://packagist.org/packages/shardimage/yii2-shardimage)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/shardimage/yii2-shardimage)](](https://packagist.org/packages/shardimage/yii2-shardimage))
 
 Yii2 Wrapper for Shardimage PHP
 
