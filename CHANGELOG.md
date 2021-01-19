@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0-alpha7] - 2021-01-19
 ### Add
  - Added `setImageHost` function to `Client` class to change the image host after loading the component config.
+ - Added `ShardimageComponent` class.
+
+### Change
+ - Changed `Component` class to deprecated, from now `ShardimageComponent` class should be used.
 
 ## [1.0.0-alpha6] - 2019-09-10
 ### Add
